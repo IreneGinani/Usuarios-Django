@@ -1,0 +1,10 @@
+{% extends 'Usuarios/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <a class="btn btn-default" href="{% url 'user_edit' pk=usuario.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ usuario.nome }}</h1>
+        <p>{{ usuario.idade }}</p>
+        <p>{{ usuario.sexo }}</p>
+    </div>
+{% endblock %}
