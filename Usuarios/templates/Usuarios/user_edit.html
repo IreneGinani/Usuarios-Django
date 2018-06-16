@@ -4,6 +4,7 @@
     <h1>Novo Usuario</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
+        <buttom type = "submit" class="btn btn-danger" value ="Deletar">Deletar</buttom>
         <button type="submit" class="save btn btn-default">Salvar</button>
     </form>
 {% endblock %}
